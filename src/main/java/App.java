@@ -17,10 +17,10 @@ public class App {
             if (!minCharacter(password)) {
                 System.out.println("Mật khẩu yếu!");
             }
-            if (!specialCharacterCheck(password)) {
+            else if (!upperCaseCheck(password) || !specialCharacterCheck(password) || !numericCheck(password)) {
                 System.out.println("Mật khẩu chưa đủ mạnh!");
             }
-        }while (!minCharacter(password) || !upperCaseCheck(password) || !specialCharacterCheck(password) || !numericCheck(password));
+        } while (!minCharacter(password) || !upperCaseCheck(password) || !specialCharacterCheck(password) || !numericCheck(password));
         System.out.println("Tạo mật khẩu thành công");
     }
 
