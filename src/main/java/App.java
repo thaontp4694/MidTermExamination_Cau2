@@ -21,7 +21,7 @@ public class App {
                 System.out.println("Mật khẩu chưa đủ mạnh!");
             }
         }while (!minCharacter(password) || !upperCaseCheck(password) || !specialCharacterCheck(password) || !numericCheck(password));
-        System.out.println("Mật khẩu mạnh!");
+        System.out.println("Tạo mật khẩu thành công");
     }
 
     public static boolean minCharacter(String pw){
